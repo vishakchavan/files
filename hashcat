@@ -1,0 +1,29 @@
+
+
+sudo apt-get update
+
+apt-get install gcc make build-essential linux-headers-$(uname -r) git
+
+wget https://us.download.nvidia.com/XFree86/Linux-x86_64/410.73/NVIDIA-Linux-x86_64-410.73.run
+
+chmod +x NVIDIA-Linux-x86_64-410.73.run
+
+./NVIDIA-Linux-x86_64-410.73.run
+
+git clone https://github.com/hashcat/hashcat.git
+
+cd hashcat
+
+make
+
+make install
+
+git clone https://github.com/vishakchavan/files.git
+
+
+
+
+git clone https://github.com/hashcat/hashcat.git
+
+cd hashcat
+
